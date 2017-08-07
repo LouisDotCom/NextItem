@@ -2,7 +2,7 @@
 //  SecondViewController.swift
 //  TabbedApp
 //
-//  Created by 3039109904LB on 8/5/17.
+//  Created by LouisDotCom on 8/5/17.
 //  Copyright © 2017 LB. All rights reserved.
 //
 
