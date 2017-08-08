@@ -42,15 +42,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     @IBOutlet weak var input: UITextField!
-
-    @IBAction func ButtonAddItems(_ sender: Any) {
     
-        if (input.text != "")
-            
-        {
-            Items.append(input.text!)
-            input.text = ""    }
-}
+    @IBAction func AddTypedItem(_ sender: Any) {
+        
+                if (input.text != "")
+        
+                {
+                    Items.append(input.text!)
+                    input.text = ""
+                }
+
+    }
+    
+
     override func viewDidAppear(_ animated: Bool) {
         ItemTableView.reloadData()
     }

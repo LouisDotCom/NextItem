@@ -138,7 +138,7 @@
                                             <color key="titleColor" red="0.45489044099999998" green="0.26595215529999999" blue="0.1158351249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="ButtonAddItems:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="6QT-1B-J2S"/>
+                                            <action selector="AddTypedItem:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="c7W-wy-c7I"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZC-fF-o6h">
