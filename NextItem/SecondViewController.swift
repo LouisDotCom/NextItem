@@ -41,6 +41,18 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var input: UITextField!
+
+    @IBAction func ButtonAddItems(_ sender: Any) {
+    
+        if (input.text != "")
+            
+        {
+            Items.append(input.text!)
+            input.text = ""    }
+}
+    override func viewDidAppear(_ animated: Bool) {
+        ItemTableView.reloadData()
+    }
 
 }
-
