@@ -9,7 +9,7 @@
 import UIKit
 
 var Items = [
-    "Call someone from Contacts, someone you haven't spoken with in the last month", "Drop down and give me 20 pushups and 20 sit-ups", "Motion is lotion: do ten minutes of PT, right now", "Run 1 fast mile", "Run 30 minute intervals", "Run a 5k", "Run a 10k ", "Run 10 miles", "Browse a copy of The Rio Grande Sun", "Write 200 words in novel", "Write 400 words in novel", "Respond to a waiting email", "Work on 505 yard", "Hit the prayer closet for 15 minutes", "Sing a joyful song", "Sing a sad song", "Take a walk through the hood", "Drink a liter (of water)", "Eat some veggies", "Eat some veggies", "Read Kindle for an hour", "Read current hard copy book(s) for an hour", "Dust / vacuum / mop / windows / deck 505", "Listen to Spanish lesson", "Listen to Spanish lesson", "Play 1/2 hour guitar (consider Sólo le pido and Jesu, Joy of Man's Desire)", "Record guitar song for the Great Collection WIP"]
+    "1Call someone from Contacts, someone you haven't spoken with in the last month", "2Drop down and give me 20 pushups and 20 sit-ups", "3Motion is lotion: do ten minutes of PT, right now", "4Run 1 fast mile", "5Run 30 minute intervals", "6Run a 5k", "7Run a 10k", "8Run 10 miles", "9Browse a copy of The Rio Grande Sun", "10Write 200 words in novel"]
 
 
 class FirstViewController: UIViewController {

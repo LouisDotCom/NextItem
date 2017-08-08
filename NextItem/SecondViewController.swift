@@ -23,7 +23,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
 
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            Items.remove(at: indexPath.row)
+            ItemTableView.reloadData()
+            
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
