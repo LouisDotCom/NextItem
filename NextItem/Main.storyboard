@@ -37,7 +37,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="uMA-Do-nnB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="24"/>
                                         <state key="normal" title="NextItem...">
                                             <color key="titleColor" red="0.45489044099999998" green="0.26595215529999999" blue="0.1158351249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" red="0.1924578585" green="0.1125206812" blue="0.049008240379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,33 +98,59 @@
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="83" y="313" width="210" height="42"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="363" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Kk3-RA-koA">
+                                <rect key="frame" x="16" y="40" width="343" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UY-d1-yNW">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="my1-IP-rd0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="24"/>
+                                        <color key="textColor" red="0.45489044099999998" green="0.26595215529999999" blue="0.1158351249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HdC-GW-Xoh">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="577"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="prototype" id="jgW-fm-Cej">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jgW-fm-Cej" id="Lrl-ra-J8m">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="8rJ-Kc-sve" id="Omt-vY-J5m"/>
+                                            <outlet property="delegate" destination="8rJ-Kc-sve" id="jfl-CW-Yvz"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7UY-d1-yNW" firstAttribute="centerX" secondItem="Kk3-RA-koA" secondAttribute="centerX" id="5vr-ex-ryD"/>
+                                    <constraint firstItem="HdC-GW-Xoh" firstAttribute="top" secondItem="7UY-d1-yNW" secondAttribute="bottom" id="anZ-6c-Jf2"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="UuS-wP-9xb" secondAttribute="trailing" id="2vF-xh-NcY"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="Kk3-RA-koA" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="EOr-Qo-IW4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Kk3-RA-koA" secondAttribute="bottom" id="IDq-lP-5ow"/>
                             <constraint firstItem="UuS-wP-9xb" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="L4T-Cb-PNd"/>
+                            <constraint firstItem="Kk3-RA-koA" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="40" id="Rvm-t7-G3o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kk3-RA-koA" secondAttribute="trailing" id="Wd0-mQ-Mct"/>
                             <constraint firstItem="UuS-wP-9xb" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="iP1-KZ-Cok"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                             <constraint firstAttribute="bottomMargin" secondItem="UuS-wP-9xb" secondAttribute="bottom" id="ufo-Mh-NkF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="ItemTableView" destination="HdC-GW-Xoh" id="p5K-En-Qn6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
