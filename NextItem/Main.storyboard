@@ -104,7 +104,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UY-d1-yNW">
                                         <rect key="frame" x="117" y="0.0" width="109" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="my1-IP-rd0"/>
+                                            <constraint firstAttribute="height" constant="20" id="cVh-H9-pKC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="18"/>
                                         <color key="textColor" red="0.45489044099999998" green="0.26595215529999999" blue="0.1158351249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,14 +128,16 @@
                                             <outlet property="delegate" destination="8rJ-Kc-sve" id="jfl-CW-Yvz"/>
                                         </connections>
                                     </tableView>
-                                                   <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-xf-eC8" userLabel="ButtonAddItems">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-xf-eC8" userLabel="ButtonAddItems">
                                         <rect key="frame" x="0.0" y="539" width="343" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="bgA-MU-1R3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="18"/>
                                         <state key="normal" title="Add Item">
                                             <color key="titleColor" red="0.45489044099999998" green="0.26595215529999999" blue="0.1158351249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-
                                             <action selector="ButtonAddItems:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="6QT-1B-J2S"/>
                                         </connections>
                                     </button>
@@ -145,28 +147,25 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                                            </subviews>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="AZC-fF-o6h" secondAttribute="trailing" id="6lU-ug-Vz4"/>
-                                    <constraint firstItem="AZC-fF-o6h" firstAttribute="leading" secondItem="Kk3-RA-koA" secondAttribute="leading" id="9Q4-3t-Uw8"/>
-                              <constraint firstItem="zIy-xf-eC8" firstAttribute="top" secondItem="HdC-GW-Xoh" secondAttribute="bottom" constant="1" id="HjG-KE-MTl"/>
-                                    <constraint firstItem="zIy-xf-eC8" firstAttribute="leading" secondItem="Kk3-RA-koA" secondAttribute="leading" id="Ydu-O4-uJm"/>
-                                    <constraint firstItem="AZC-fF-o6h" firstAttribute="top" secondItem="zIy-xf-eC8" secondAttribute="bottom" constant="1" id="fun-kR-aqX"/>
-                                    <constraint firstAttribute="trailing" secondItem="zIy-xf-eC8" secondAttribute="trailing" id="mFe-0j-Ckd"/>
-                    
+                                    <constraint firstItem="zIy-xf-eC8" firstAttribute="leading" secondItem="AZC-fF-o6h" secondAttribute="leading" id="1sR-8b-xRF"/>
+                                    <constraint firstItem="HdC-GW-Xoh" firstAttribute="leading" secondItem="Kk3-RA-koA" secondAttribute="leading" id="KX4-4P-RtI"/>
+                                    <constraint firstItem="HdC-GW-Xoh" firstAttribute="leading" secondItem="zIy-xf-eC8" secondAttribute="leading" id="iwW-12-8JA"/>
+                                    <constraint firstItem="HdC-GW-Xoh" firstAttribute="top" secondItem="7UY-d1-yNW" secondAttribute="bottom" constant="1" id="nRX-4B-E40"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="UuS-wP-9xb" secondAttribute="trailing" id="2vF-xh-NcY"/>
-                            <constraint firstItem="Kk3-RA-koA" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="EOr-Qo-IW4"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Kk3-RA-koA" secondAttribute="bottomMargin" constant="60" id="IDq-lP-5ow"/>
-                            <constraint firstItem="UuS-wP-9xb" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="L4T-Cb-PNd"/>
-                            <constraint firstItem="Kk3-RA-koA" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="16" id="Rvm-t7-G3o"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kk3-RA-koA" secondAttribute="trailing" id="Wd0-mQ-Mct"/>
-                            <constraint firstItem="UuS-wP-9xb" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="iP1-KZ-Cok"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="UuS-wP-9xb" secondAttribute="bottom" id="ufo-Mh-NkF"/>
+                            <constraint firstItem="UuS-wP-9xb" firstAttribute="trailing" secondItem="Kk3-RA-koA" secondAttribute="trailing" id="Ahd-di-yrj"/>
+                            <constraint firstItem="UuS-wP-9xb" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="AxG-rv-NNA"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Kk3-RA-koA" secondAttribute="bottom" constant="11" id="CH7-yD-Qrk"/>
+                            <constraint firstItem="UuS-wP-9xb" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Dks-cG-Wv6"/>
+                            <constraint firstAttribute="bottom" secondItem="UuS-wP-9xb" secondAttribute="bottom" id="WRV-oj-8Ss"/>
+                            <constraint firstItem="UuS-wP-9xb" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="ZaI-es-C4S"/>
+                            <constraint firstItem="UuS-wP-9xb" firstAttribute="leading" secondItem="Kk3-RA-koA" secondAttribute="leading" id="bjR-mu-5Hn"/>
+                            <constraint firstItem="Kk3-RA-koA" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="16" id="caM-sv-Ihq"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
