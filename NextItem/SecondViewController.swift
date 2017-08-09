@@ -49,13 +49,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         {
             Items.append(input.text!)
             input.text = ""
+            ItemTableView.reloadData()
         }
+        
     }
     
     
    
-    override func viewDidAppear(_ animated: Bool) {
-        ItemTableView.reloadData()
-    }
+    
 
 }
