@@ -138,7 +138,7 @@
                                             <color key="titleColor" red="0.45489044099999998" green="0.26595215529999999" blue="0.1158351249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="AddTypedItem:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="c7W-wy-c7I"/>
+                                            <action selector="AddTypedItem:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="HU6-4U-is4"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZC-fF-o6h">
@@ -171,7 +171,7 @@
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="ItemTableView" destination="HdC-GW-Xoh" id="p5K-En-Qn6"/>
-                        <outlet property="input" destination="zIy-xf-eC8" id="ywp-z6-2wY"/>
+                        <outlet property="input" destination="AZC-fF-o6h" id="dT9-2z-xzb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
