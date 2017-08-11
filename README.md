@@ -6,8 +6,8 @@ Devices and orientation: should run on currently supported iPhones and iPads in 
 
 Pre-Release History:
 
-07/19/2017: first working version, used "shuffle" on array
-07/20/2017: merged Chris' random function to replace shuffle
-8/11/2017: two-tab version finished (editable items)
+*  07/19/2017: first working version, used "shuffle" on array
+*  07/20/2017: merged Chris' random function to replace shuffle
+*  8/11/2017: two-tab version finished (editable items)
 
 
